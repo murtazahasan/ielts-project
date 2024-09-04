@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaWhatsapp className="text-xl" />
-                <p>0314-123456</p>
+                <p>03172835015</p>
               </div>
               {/* Social Handle */}
               <div className="flex items-center gap-3 mt-6">

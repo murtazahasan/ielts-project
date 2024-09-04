@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import mapImg from "/map-pic.png";
 
 function Contact() {
   const [accordionData, setAccordionData] = useState([
@@ -43,20 +44,22 @@ function Contact() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-center p-4 border rounded-md shadow-md hover:shadow-lg">
-            <img
-              className="w-8 h-8 mr-4"
-              src="/36whatsapp.png"
-              alt="WhatsApp us"
-            />
-            <div className="flex-grow">
-              <span className="text-lg font-semibold">WhatsApp us at:</span>
-              <a
-                href="https://wa.me/12345678911"
-                className="text-blue-500 ml-1 hover:underline"
-              >
-                0314-1234567
-              </a>
-            </div>
+            <a
+              href="https://wa.me/+923172835015"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <img
+                className="w-8 h-8 mr-4"
+                src="/36whatsapp.png"
+                alt="WhatsApp us"
+              />
+              <div className="flex items-center">
+                <span className="text-lg font-semibold">WhatsApp us at:</span>
+                <span className="text-blue-500 ml-1">+92-3172835015</span>
+              </div>
+            </a>
           </div>
           <div className="flex items-center p-4 border rounded-md shadow-md hover:shadow-lg">
             <img
@@ -93,7 +96,32 @@ function Contact() {
         </div>
       </div>
 
-      <div className="container mx-auto mb-36">
+      <div className="flex flex-col items-center p-4 mt-10 sm:px-40">
+        <h1 className="text-3xl font-bold mb-4 text-gray-800 border-b-2 px-10">
+          Our Location
+        </h1>
+        <div className="relative w-full rounded-lg shadow-lg">
+          <a
+            href="https://www.google.com/maps?q=24.925526,67.098599"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <img
+              src={mapImg}
+              alt="Map Screenshot"
+              className="w-full rounded-lg"
+            />
+            <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-5 shadow-md text-white text-lg font-bold rounded-lg">
+              <span className="border-b-2 p-1 bg-slate-950 bg-opacity-30 rounded-full ">
+                View
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div className="container mx-auto mt-10 mb-36">
         <h1 className="font-bold text-center text-3xl mt-16 mb-10">
           Frequently Asked Questions
         </h1>
