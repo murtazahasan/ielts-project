@@ -47,7 +47,7 @@ const CoursesLink = () => {
         {courses.map((course) => (
           <div
             key={course.name}
-            className="bg-white shadow-md rounded-3xl p-4 h-48"
+            className="bg-gray-200 shadow-md rounded-3xl p-4 h-48"
           >
             <h2 className="text-xl font-semibold mb-2">{course.name}</h2>
             <p className="mb-10">{course.description}</p>
